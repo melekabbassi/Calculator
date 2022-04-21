@@ -9,7 +9,7 @@ import javafx.stage.Window;
 public class CalculatorFrame extends JFrame{
 
     //Calculator
-
+    private JLabel lblCalculator;
     private JTextField textField;
     private JButton button0;
     private JButton button1;
@@ -27,6 +27,7 @@ public class CalculatorFrame extends JFrame{
     private JButton buttonDivide;
     private JButton buttonEquals;
     private JButton buttonClear;
+    private JButton buttonClearEntry;
     
     public CalculatorFrame() {
         setTitle("Calculator");
@@ -34,6 +35,11 @@ public class CalculatorFrame extends JFrame{
         setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+
+        //Calculator
+        lblCalculator = new JLabel("Calculator");
+        lblCalculator.setBounds(10, 10, 100, 20);
+        add(lblCalculator);
         
         textField = new JTextField();
         textField.setBounds(10, 10, 280, 30);
@@ -103,6 +109,161 @@ public class CalculatorFrame extends JFrame{
         buttonClear.setBounds(250, 70, 50, 60);
         add(buttonClear);
 
+        buttonClearEntry = new JButton("CE");
+        buttonClearEntry.setBounds(190, 70, 50, 60);
+        add(buttonClearEntry);
+    }
+
+    public JLabel getLblCalculator() {
+        return lblCalculator;
+    }
+
+    public void setLblCalculator(JLabel lblCalculator) {
+        this.lblCalculator = lblCalculator;
+    }
+
+    public JTextField getTextField() {
+        return textField;
+    }
+
+    public void setTextField(JTextField textField) {
+        this.textField = textField;
+    }
+
+    public JButton getButton0() {
+        return button0;
+    }
+
+    public void setButton0(JButton button0) {
+        this.button0 = button0;
+    }
+
+    public JButton getButton1() {
+        return button1;
+    }
+
+    public void setButton1(JButton button1) {
+        this.button1 = button1;
+    }
+
+    public JButton getButton2() {
+        return button2;
+    }
+
+    public void setButton2(JButton button2) {
+        this.button2 = button2;
+    }
+
+    public JButton getButton3() {
+        return button3;
+    }
+
+    public void setButton3(JButton button3) {
+        this.button3 = button3;
+    }
+
+    public JButton getButton4() {
+        return button4;
+    }
+
+    public void setButton4(JButton button4) {
+        this.button4 = button4;
+    }
+
+    public JButton getButton5() {
+        return button5;
+    }
+
+    public void setButton5(JButton button5) {
+        this.button5 = button5;
+    }
+
+    public JButton getButton6() {
+        return button6;
+    }
+
+    public void setButton6(JButton button6) {
+        this.button6 = button6;
+    }
+
+    public JButton getButton7() {
+        return button7;
+    }
+
+    public void setButton7(JButton button7) {
+        this.button7 = button7;
+    }
+
+    public JButton getButton8() {
+        return button8;
+    }
+
+    public void setButton8(JButton button8) {
+        this.button8 = button8;
+    }
+
+    public JButton getButton9() {
+        return button9;
+    }
+
+    public void setButton9(JButton button9) {
+        this.button9 = button9;
+    }
+
+    public JButton getButtonAdd() {
+        return buttonAdd;
+    }
+
+    public void setButtonAdd(JButton buttonAdd) {
+        this.buttonAdd = buttonAdd;
+    }
+
+    public JButton getButtonSubtract() {
+        return buttonSubtract;
+    }
+
+    public void setButtonSubtract(JButton buttonSubtract) {
+        this.buttonSubtract = buttonSubtract;
+    }
+
+    public JButton getButtonMultiply() {
+        return buttonMultiply;
+    }
+
+    public void setButtonMultiply(JButton buttonMultiply) {
+        this.buttonMultiply = buttonMultiply;
+    }
+
+    public JButton getButtonDivide() {
+        return buttonDivide;
+    }
+
+    public void setButtonDivide(JButton buttonDivide) {
+        this.buttonDivide = buttonDivide;
+    }
+
+    public JButton getButtonEquals() {
+        return buttonEquals;
+    }
+
+    public void setButtonEquals(JButton buttonEquals) {
+        this.buttonEquals = buttonEquals;
+    }
+
+    public JButton getButtonClear() {
+        return buttonClear;
+    }
+
+    public void setButtonClear(JButton buttonClear) {
+        this.buttonClear = buttonClear;
+    }
+
+    public JButton getButtonClearEntry() {
+        return buttonClearEntry;
+    }
+
+    public void setButtonClearEntry(JButton buttonClearEntry) {
+        this.buttonClearEntry = buttonClearEntry;
     }
     public static void main(String[] args) throws Exception {
         new CalculatorFrame();
