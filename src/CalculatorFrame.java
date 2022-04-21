@@ -4,6 +4,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import javafx.event.ActionEvent;
 import javafx.stage.Window;
 
 public class CalculatorFrame extends JFrame{
@@ -38,11 +39,11 @@ public class CalculatorFrame extends JFrame{
 
         //Calculator
         lblCalculator = new JLabel("Calculator");
-        lblCalculator.setBounds(10, 10, 100, 20);
+        lblCalculator.setBounds(200, 10, 100, 20);
         add(lblCalculator);
         
         textField = new JTextField();
-        textField.setBounds(10, 10, 280, 30);
+        textField.setBounds(30, 30, 280, 30);
         add(textField);
         
         button0 = new JButton("0");
@@ -265,6 +266,139 @@ public class CalculatorFrame extends JFrame{
     public void setButtonClearEntry(JButton buttonClearEntry) {
         this.buttonClearEntry = buttonClearEntry;
     }
+
+    // button actions click events
+    public void button0ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("0");
+        } else {
+            textField.setText(textField.getText() + "0");
+        }
+    }
+
+    public void button1ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("1");
+        } else {
+            textField.setText(textField.getText() + "1");
+        }
+    }
+
+    public void button2ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("2");
+        } else {
+            textField.setText(textField.getText() + "2");
+        }
+    }
+
+    public void button3ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("3");
+        } else {
+            textField.setText(textField.getText() + "3");
+        }
+    }
+
+    public void button4ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("4");
+        } else {
+            textField.setText(textField.getText() + "4");
+        }
+    }
+
+    public void button5ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("5");
+        } else {
+            textField.setText(textField.getText() + "5");
+        }
+    }
+
+    public void button6ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("6");
+        } else {
+            textField.setText(textField.getText() + "6");
+        }
+    }
+
+    public void button7ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("7");
+        } else {
+            textField.setText(textField.getText() + "7");
+        }
+    }
+
+    public void button8ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("8");
+        } else {
+            textField.setText(textField.getText() + "8");
+        }
+    }
+
+    public void button9ActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("9");
+        } else {
+            textField.setText(textField.getText() + "9");
+        }
+    }
+
+    public void buttonAddActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("0");
+        } else {
+            textField.setText(textField.getText() + "+");
+        }
+    }
+
+    public void buttonSubtractActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("0");
+        } else {
+            textField.setText(textField.getText() + "-");
+        }
+    }
+
+    public void buttonMultiplyActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("0");
+        } else {
+            textField.setText(textField.getText() + "*");
+        }
+    }
+
+    public void buttonDivideActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("0");
+        } else {
+            textField.setText(textField.getText() + "/");
+        }
+    }
+
+    public void buttonEqualsActionPerformed(ActionEvent e) {
+        if (textField.getText().equals("0")) {
+            textField.setText("0");
+        } else {
+            textField.setText(textField.getText() + "=");
+        }
+    }
+
+    public void buttonClearActionPerformed(ActionEvent e) {
+        textField.setText("0");
+    }
+
+    public void buttonClearEntryActionPerformed(ActionEvent e) {
+        textField.setText("0");
+    }
+
+
+
+    
     public static void main(String[] args) throws Exception {
         new CalculatorFrame();
     }
