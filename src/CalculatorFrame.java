@@ -1,11 +1,5 @@
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-
-import javafx.event.ActionEvent;
-import javafx.stage.Window;
+import javax.swing.*;
+import java.awt.event.*;
 
 public class CalculatorFrame extends JFrame{
 
@@ -396,30 +390,8 @@ public class CalculatorFrame extends JFrame{
         textField.setText("0");
     }
 
-    // private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-    //     // TODO add your handling code here:
-
-
-
-        
-    // } 
-
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        String button_text = button1.getText();
-        String screen_text = textField.getText();
-
-        if (screen_text.equals("0")) {
-            textField.setText(button_text);
-        } else {
-            textField.setText(screen_text + button_text);
-        }
-    }
-
-    /*aaaaaaaa*/
     public static void main(String[] args) throws Exception {
         new CalculatorFrame();
-    }
-    
 
+    }
 }
