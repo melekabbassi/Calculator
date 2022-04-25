@@ -1,11 +1,9 @@
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import javafx.event.ActionEvent;
-import javafx.stage.Window;
 
 public class CalculatorFrame extends JFrame{
 
@@ -399,6 +397,4 @@ public class CalculatorFrame extends JFrame{
     public static void main(String[] args) throws Exception {
         new CalculatorFrame();
     }
-    
-
 }
