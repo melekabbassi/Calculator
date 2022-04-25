@@ -395,9 +395,6 @@ public class CalculatorFrame extends JFrame{
     public void buttonClearEntryActionPerformed(ActionEvent e) {
         textField.setText("0");
     }
-
-
-
     
     public static void main(String[] args) throws Exception {
         new CalculatorFrame();
